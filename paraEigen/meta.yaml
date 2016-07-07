@@ -1,0 +1,21 @@
+package:
+  name: paraeigen
+  version: 0.0.1
+
+build:
+  number: 3
+
+source:
+  git_url: https://github.com/looooo/paraEigen
+
+requirements:
+  build:
+    - python
+    - cmake
+    - pybind11          #   - pybind
+    - eigen             #   - looooo
+  run:
+    - python
+
+about:
+  summary: some eigen-wrappers

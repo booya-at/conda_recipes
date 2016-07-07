@@ -23,6 +23,7 @@ requirements:
     - python
     - meshpy              #   - https://conda.anaconda.org/looooo
 #   - parabem             #   - https://conda.anaconda.org/looooo
+    - matplotlib
     - numpy
     - ezodf               #   - https://conda.anaconda.org/looooo
     - svgwrite            #   - https://conda.anaconda.org/omnia
