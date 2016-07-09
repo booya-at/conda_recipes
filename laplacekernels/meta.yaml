@@ -3,10 +3,10 @@ package:
   version: 0.0.1
 
 build:
-  number: 4
+  number: 8
 
 source:
-  path: https://github.com/looooo/laplace_kernels.git
+  git_url: https://github.com/looooo/laplace_kernels.git
 
 requirements:
   build:
@@ -20,4 +20,4 @@ requirements:
     - paraeigen
 
 about:
-summary: Some laplace kernels
+  summary: Some laplace kernels
