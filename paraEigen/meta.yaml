@@ -11,9 +11,8 @@ source:
 requirements:
   build:
     - python
-    - cmake
-    - pybind11          #   - pybind
-    - eigen             #   - looooo
+    - pybind11          #   - conda-forge
+    - eigen 3.3         #   - looooo
   run:
     - python
 
