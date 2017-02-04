@@ -27,6 +27,7 @@ requirements:
   build:
     - python
     - setuptools
+    - boost 1.62
     - pytools >=2011.2  # https://conda.anaconda.org/omnia
     - pytest >=2
     - numpy
