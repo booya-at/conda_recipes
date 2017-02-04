@@ -1,14 +1,11 @@
 package:
   name: meshpy
-  version: "2014.1"
+  version: "2016.1.2"
 
 source:
-  fn: MeshPy-2014.1.tar.gz
-  url: https://pypi.python.org/packages/source/M/MeshPy/MeshPy-2014.1.tar.gz
-  md5: 165fbcb2f580340f3640b25c1c89e25d
-#  patches:
-   # List any patch files here
-   # - fix.patch
+  fn: MeshPy-2016.1.2.tar.gz
+  url: https://github.com/inducer/meshpy/archive/v2016.1.2.tar.gz
+  md5: 543462bc4f5ae74041ba0a1675503847
 
 # build:
   # noarch_python: True
