@@ -14,6 +14,7 @@ requirements:
     - cmake
     - pybind11          #   - pybind
     - eigen             #   - looooo
+    - vtk
   run:
     - python
     - paraeigen         #   - looooo
