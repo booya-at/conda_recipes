@@ -11,11 +11,14 @@ source:
 
 requirements:
   build:
+    - ninja  # [win]
+    - vc 14  # [win and py>=35]
     - cmake
     - python
     - pybind11
     - eigen 3.3*
   run:
+    - vc 14  # [win and py>=35]
     - python
 
 about:

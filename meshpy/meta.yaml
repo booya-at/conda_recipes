@@ -9,23 +9,27 @@ source:
   patches: 
     - config.patch
     - boost_1.64.patch
+    - win1.patch  # [win]
 build:
   number: 1
 
 requirements:
   build:
-    - gcc
+    - vc 14  # [win and py>=35]
+    - ninja  # [win and py>=35]
+    - gcc  # [unix]
     - python
     - setuptools
     - boost >=1.64*
-    - pytools >=2011.2  # https://conda.anaconda.org/omnia
+    - pytools >=2011.2
     - pytest >=2
     - numpy
 
   run:
+    - vc 14  # [win and py>=35]
     - python
     - boost >=1.64*
-    - pytools >=2011.2  # https://conda.anaconda.org/omnia
+    - pytools >=2011.2
     - pytest >=2
     - numpy
 
