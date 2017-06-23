@@ -12,8 +12,8 @@ requirements:
   build:
     - python
     - cmake
-    - pybind11          #   - pybind
-    - eigen             #   - rmg
+    - pybind11
+    - eigen
   run:
     - python
     - paraeigen         #   - looooo

@@ -7,12 +7,14 @@ build:
 
 source:
   git_url: https://github.com/looooo/paraEigen
+  git_tag: master
 
 requirements:
   build:
+    - cmake
     - python
-    - pybind11          #   - conda-forge
-    - eigen 3.3         #   - looooo
+    - pybind11
+    - eigen 3.3*
   run:
     - python
 
