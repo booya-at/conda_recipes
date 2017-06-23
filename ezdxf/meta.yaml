@@ -1,30 +1,14 @@
 package:
   name: ezdxf
-  version: "0.8.1"
+  version: "0.8.2"
 
 source:
-  fn: ezdxf-0.8.1.zip
-  url: https://pypi.python.org/packages/13/ed/452e696d8192a34d67ccd9cd7f928d30a3340200f0bdbae4b3c94942b928/ezdxf-0.8.1.zip
-  md5: d4818d3ac47934b02541e7531f587625
-#  patches:
-   # List any patch files here
-   # - fix.patch
+  fn: ezdxf-0.8.2.tar.gz
+  url: https://github.com/mozman/ezdxf/archive/v0.8.2.tar.gz
+  sha256: 60ebedbb0c6ec3071af81f01247a3e09afef0c325b7448fb409331755a844008
 
-# build:
-  # noarch_python: True
-  # preserve_egg_dir: True
-  # entry_points:
-    # Put any entry points (scripts to be generated automatically) here. The
-    # syntax is module:function.  For example
-    #
-    # - ezdxf = ezdxf:main
-    #
-    # Would create an entry point called ezdxf that calls ezdxf.main()
-
-
-  # If this is a new build for the same version, increment the build
-  # number. If you do not include this key, it defaults to 0.
-  # number: 1
+build:
+  number: 0
 
 requirements:
   build:
@@ -48,24 +32,9 @@ test:
     - ezdxf.templates
     - ezdxf.tools
 
-  # commands:
-    # You can put test commands to be run here.  Use this to test that the
-    # entry points work.
-
-
-  # You can also put a file called run_test.py in the recipe that will be run
-  # at test time.
-
-  # requires:
-    # Put any additional test requirements here.  For example
-    # - nose
 
 about:
   home: http://github.com/mozman/ezdxf.git
   license: MIT License
   summary: 'A Python package to create/manipulate DXF drawings.'
   license_family: MIT
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

@@ -16,7 +16,7 @@ requirements:
     - eigen
   run:
     - python
-    - paraeigen         #   - looooo
+    - paraeigen
     - numpy
     - matplotlib
 

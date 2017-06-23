@@ -12,12 +12,12 @@ requirements:
   build:
     - python
     - cmake
-    - pybind11          #   - pybind
-    - eigen             #   - looooo
+    - pybind11
+    - eigen
     - vtk
   run:
     - python
-    - paraeigen         #   - looooo
+    - paraeigen
     - numpy
     - matplotlib
 
