@@ -10,11 +10,14 @@ source:
 
 requirements:
   build:
+    - ninja  # [win]
+    - vc 14  # [win and py>=35]
     - python
     - cmake
     - pybind11
     - eigen
   run:
+    - vc 14  # [win and py>=35]
     - python
     - paraeigen
     - numpy

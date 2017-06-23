@@ -8,27 +8,29 @@ source:
   # fn: MeshPy-2016.1.2.tar.gz
   # url: https://github.com/inducer/meshpy/archive/v2016.1.2.tar.gz
   # md5: 543462bc4f5ae74041ba0a1675503847
-  # patches: 
-    # - config.patch
-    # - boost_1.64.patch
+  patches: 
+    - triangle_win.patch
 build:
   number: 1
 
 requirements:
   build:
     - cmake
-    - gcc
+    - vc 14  # [win and py>=35]
+    - ninja  # [win and py>=35]
+    - gcc  # [unix]
     - python
     - setuptools
     - boost >=1.64*
-    - pytools >=2011.2  # https://conda.anaconda.org/omnia
+    - pytools >=2011.2
     - pytest >=2
     - numpy
 
   run:
+    - vc 14  # [win and py>=35]
     - python
     - boost >=1.64*
-    - pytools >=2011.2  # https://conda.anaconda.org/omnia
+    - pytools >=2011.2
     - pytest >=2
     - numpy
 
