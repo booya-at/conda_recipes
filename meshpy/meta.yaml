@@ -10,6 +10,7 @@ source:
     - config.patch
     - boost_1.64.patch
     - win1.patch  # [win]
+    - win2.patch  # [win]
 build:
   number: 1
 

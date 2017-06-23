@@ -1,0 +1,13 @@
+diff --git a/src/cpp/triangle.c b/src/cpp/triangle.c
+index 5a0c349..46453f9 100644
+--- a/src/cpp/triangle.c
++++ b/src/cpp/triangle.c
+@@ -219,7 +219,7 @@
+ /* If yours is not a Unix system, define the NO_TIMER compiler switch to     */
+ /*   remove the Unix-specific timing code.                                   */
+ 
+-/* #define NO_TIMER */
++#define NO_TIMER
+ 
+ /* To insert lots of self-checks for internal errors, define the SELF_CHECK  */
+ /*   symbol.  This will slow down the program significantly.  It is best to  */
