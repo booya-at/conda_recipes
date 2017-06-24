@@ -8,8 +8,7 @@ source:
   # fn: MeshPy-2016.1.2.tar.gz
   # url: https://github.com/inducer/meshpy/archive/v2016.1.2.tar.gz
   # md5: 543462bc4f5ae74041ba0a1675503847
-  patches: 
-    - triangle_win.patch
+
 build:
   number: 1
 
