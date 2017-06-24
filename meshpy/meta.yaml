@@ -3,11 +3,8 @@ package:
   version: "2016.1.2"
 
 source:
-  git_url: https://github.com/looooo/meshpy
-  git_tag: master
-  # fn: MeshPy-2016.1.2.tar.gz
-  # url: https://github.com/inducer/meshpy/archive/v2016.1.2.tar.gz
-  # md5: 543462bc4f5ae74041ba0a1675503847
+  fn: meshpy.tar.gz
+  url: https://github.com/looooo/meshpy/archive/master.tar.gz
 
 build:
   number: 1
