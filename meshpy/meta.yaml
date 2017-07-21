@@ -4,7 +4,7 @@ package:
 
 source:
   fn: meshpy.tar.gz
-  url: https://github.com/looooo/meshpy/archive/master.tar.gz
+  url: https://github.com/inducer/meshpy
 
 build:
   number: 1
