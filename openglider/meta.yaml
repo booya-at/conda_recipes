@@ -3,7 +3,7 @@ package:
   version: 0.0.1
 
 build:
-  number: 7
+  number: 8
 
 source:
   git_url: https://github.com/booya-at/OpenGlider.git
@@ -29,6 +29,10 @@ requirements:
     - svgwrite
     - ezdxf
     - lxml
+
+test:
+  imports:
+    - openglider
 
 about:
   summary: paraglider design

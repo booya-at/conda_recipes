@@ -23,5 +23,9 @@ requirements:
     - numpy
     - matplotlib
 
+test:
+  imports:
+    - paraBEM
+
 about:
   summary: potential flow with boundary elements.
