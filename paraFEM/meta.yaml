@@ -20,6 +20,11 @@ requirements:
     - paraeigen
     - numpy
     - matplotlib
+    - vtk
+
+test:
+  imports:
+    - paraFEM
 
 about:
   summary: explicit fem for membrane elements

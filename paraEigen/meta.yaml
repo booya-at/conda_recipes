@@ -21,5 +21,9 @@ requirements:
     - vc 14  # [win and py>=35]
     - python
 
+test:
+  imports:
+    - paraEigen
+
 about:
   summary: some eigen-wrappers

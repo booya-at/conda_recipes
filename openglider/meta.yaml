@@ -30,5 +30,9 @@ requirements:
     - ezdxf
     - lxml
 
+test:
+  imports:
+    - openglider
+
 about:
   summary: paraglider design
