@@ -7,7 +7,7 @@ source:
     git_tag: master
 
 build:
-    number: 3
+    number: 4
 
 requirements:
     build:
@@ -16,7 +16,7 @@ requirements:
         - ninja  # [win and py>=35]
         - python
         - setuptools
-        - boost >=1.64*
+        - boost >=1.66*
         - pytools >=2011.2
         - pytest >=2
         - numpy
@@ -24,14 +24,14 @@ requirements:
     run:
         - vc 14  # [win and py>=35]
         - python
-        - boost >=1.64*
+        - boost >=1.66*
         - pytools >=2011.2
         - pytest >=2
         - numpy
 
 test:
     requirements:
-        - boost >=1.64*
+        - boost >=1.66*
     imports:
         - meshpy
         - meshpy.triangle
