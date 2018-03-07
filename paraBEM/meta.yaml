@@ -1,27 +1,28 @@
 package:
   name: parabem
-  version: 0.0.1
+  version: 0.1.0
 
 build:
-  number: 4
+  number: 0
 
 source:
   git_url: https://github.com/booya-at/paraBEM
 
 requirements:
   build:
-    - ninja  # [win]
     - vc 14  # [win and py>=35]
+    - ninja
     - python
     - cmake
-    - pybind11
+    - pybind11 2.2.*
     - eigen
+    - openmpi  # [unix]
   run:
     - vc 14  # [win and py>=35]
     - python
-    - paraeigen
     - numpy
     - matplotlib
+    - openglider
 
 test:
   imports:

@@ -1,6 +1,7 @@
 mkdir -p build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} \
-      -DCMAKE_BUILD_TYPE=Release \
-      ..
-make install
+cmake .. -G "Ninja" \
+      -DCMAKE_INSTALL_PREFIX:FILEPATH=${PREFIX} \
+      -DCMAKE_BUILD_TYPE=Release
+
+ninja install
