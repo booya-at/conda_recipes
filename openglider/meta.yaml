@@ -2,28 +2,23 @@ package:
   name: openglider
   version: 0.0.1
 
-build:
-  number: 8
-
 source:
   git_url: https://github.com/booya-at/OpenGlider.git
   git_tag: develop
 
+build:
+  number: 9
+  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+
 requirements:
   build:
     - python
-    - meshpy
-    - parabem
-    - numpy
-    - ezodf
-    - lxml
-    - ezdxf
-    - svgwrite
+    - pip
   run:
     - python
     - meshpy
     - parabem
-    - matplotlib
     - numpy
     - ezodf
     - svgwrite
