@@ -1,13 +1,16 @@
+{%set name = "openglider"%}
+{%set version = "0.0.1"%}
+
 package:
-  name: openglider
-  version: 0.0.1
+  name: {{ name }}
+  version: {{ version }}
 
 source:
   git_url: https://github.com/booya-at/OpenGlider.git
   git_tag: develop
 
 build:
-  number: 9
+  number: 10
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
