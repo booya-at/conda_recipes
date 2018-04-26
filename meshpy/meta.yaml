@@ -3,17 +3,23 @@ package:
     version: "2016.1.2"
 
 source:
-    git_url: https://github.com/inducer/meshpy
-    git_tag: master
+    fn: meshpy
+    url: https://github.com/inducer/meshpy/archive/b9b0e52dd5bced64ff518e87f333949fba93bdd3.tar.gz
+    sha256: eb83210d035b87b6b2b87f8cb9b8600d6009b755cccfd0e1a9eadf8c70d27c3e
 
 build:
-    number: 4
+    number: 5
+    skip: true  # [win and py<35]
+    features:
+        - vc14  # [win]
 
 requirements:
     build:
+        - toolchain
         - cmake
-        - vc 14  # [win and py>=35]
-        - ninja  # [win and py>=35]
+        - gcc  # [linux]
+        - vc 14  # [win]
+        - ninja  # [win]
         - python
         - setuptools
         - boost >=1.66*
@@ -22,7 +28,8 @@ requirements:
         - numpy
 
     run:
-        - vc 14  # [win and py>=35]
+        - libgcc  # [linux]
+        - vc 14  # [win]
         - python
         - boost >=1.66*
         - pytools >=2011.2
@@ -41,3 +48,6 @@ about:
     license: MIT License
     summary: 'Triangular and Tetrahedral Mesh Generator'
 
+extra:
+    recipe-maintainers:
+        - looooo
