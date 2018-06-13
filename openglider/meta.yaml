@@ -10,17 +10,16 @@ source:
   git_tag: develop
 
 build:
-  number: 11
+  number: 12
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
 requirements:
   build:
-    - python
     - pip
+    - python
   run:
     - python
-    - meshpy
     - parabem
     - numpy
     - ezodf

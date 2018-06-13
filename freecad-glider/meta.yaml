@@ -1,22 +1,23 @@
 {%set name = "freecad-glider"%}
+{%set version = "0.0.1"%}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  git_url: https://github.com/booya-at/{{ freecad-glider }}
+  git_url: https://github.com/booya-at/freecad_glider
   git_tag: master
 
 build:
-  number: 3
+  number: 4
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
 requirements:
   build:
-    - python
     - pip
+    - python
   run:
     - openglider
     - freecad
