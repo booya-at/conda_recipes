@@ -1,7 +1,12 @@
 mkdir -p build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} \
-      -DCMAKE_BUILD_TYPE=Release \
-      -DBUILD_TESTS=OFF \
+
+export LIBRARY_PATH=$PREFIX/lib
+
+cmake -G "Ninja" \
+      -D CMAKE_INSTALL_PREFIX=${PREFIX} \
+      -D CMAKE_BUILD_TYPE=Release \
+      -D BUILD_TESTS=OFF \
       ..
-make install
+
+ninja install

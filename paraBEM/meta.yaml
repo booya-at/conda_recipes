@@ -22,8 +22,6 @@ requirements:
     - python
     - numpy
     - matplotlib
-    - openglider
-
 test:
   imports:
     - paraBEM
