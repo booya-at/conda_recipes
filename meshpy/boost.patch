@@ -1,0 +1,16 @@
+diff --git a/aksetup_helper.py b/aksetup_helper.py
+index 50507af..da3f7a3 100644
+--- a/aksetup_helper.py
++++ b/aksetup_helper.py
+@@ -508,7 +508,10 @@ class BoostLibraries(Libraries):
+     def __init__(self, lib_base_name, default_lib_name=None):
+         if default_lib_name is None:
+             if lib_base_name == "python":
+-                default_lib_name = "boost_python-py%d%d" % sys.version_info[:2]
++                if sys.version_info.major < 3:
++                    default_lib_name = "boost_python"
++                else:
++                    default_lib_name = "boost_python3"
+             else:
+                 default_lib_name = "boost_%s" % lib_base_name
+ 
