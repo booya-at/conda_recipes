@@ -10,7 +10,7 @@ source:
   git_tag: develop
 
 build:
-  number: 13
+  number: 14
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 

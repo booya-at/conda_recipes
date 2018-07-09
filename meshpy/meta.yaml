@@ -21,9 +21,9 @@ build:
 requirements:
     build:
         - {{ compiler('cxx') }}
-        - cmake
         - ninja  # [win]
     host:
+        - cmake
         - python
         - setuptools
         - boost
