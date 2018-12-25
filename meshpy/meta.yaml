@@ -1,6 +1,6 @@
 {%set name = "meshpy"%}
-{%set version = "2018.1"%}
-{%set sha256 = "dbfda01cb23020cbbfcc0c83d5872c95e4fe532679b56b7ba65f445bdcc85c8c"%}
+{%set version = "2018.2.1"%}
+{%set sha256 = "167e1f4d74d1fd139e303fae1e57c5a7c1b98c9f1f31f92a017597c1554e0a3d"%}
 
 
 package:
@@ -11,36 +11,28 @@ source:
     fn: {{ name }}_{{ version }}.tar.gz
     url: https://github.com/inducer/{{ name }}/archive/v{{ version }}.tar.gz
     sha256: {{ sha256 }}
-    patches:
-        - boost.patch
 
 build:
     number: 0
-    skip: true  # [win and py<35]
 
 requirements:
     build:
         - {{ compiler('cxx') }}
         - ninja  # [win]
     host:
-        - cmake
         - python
         - setuptools
-        - boost
+        - pybind11
         - pytools
         - pytest
         - numpy
 
     run:
         - python
-        - boost
         - pytools
-        - pytest
         - numpy
 
 test:
-    requirements:
-        - boost
     imports:
         - meshpy
         - meshpy.triangle

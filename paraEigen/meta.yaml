@@ -1,29 +1,30 @@
 package:
-  name: paraeigen
-  version: 0.0.1
+    name: paraeigen
+    version: 0.0.1
 
 build:
-  number: 4
+    number: 4
 
 source:
-  git_url: https://github.com/looooo/paraEigen
-  git_tag: master
+    git_url: https://github.com/looooo/paraEigen
+    git_tag: master
 
 requirements:
-  build:
-    - ninja  # [win]
-    - vc 14  # [win and py>=35]
-    - cmake
-    - python
-    - pybind11
-    - eigen 3.3*
-  run:
-    - vc 14  # [win and py>=35]
-    - python
+    build:
+        - {{ compiler('cxx') }}
+        - ninja
+        - cmake
+    host:
+        - python
+        - pybind11
+        - eigen
+        - openmpi  # [unix]
+    run:
+        - python
 
 test:
-  imports:
-    - paraEigen
+    imports:
+        - paraEigen
 
 about:
-  summary: some eigen-wrappers
+    summary: some eigen-wrappers

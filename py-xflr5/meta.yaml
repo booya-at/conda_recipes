@@ -1,0 +1,31 @@
+package:
+  name: py-xflr5
+  version: 0.0.1
+
+build:
+  number: 0
+
+source:
+  git_url: https://github.com/looooo/xfoil-python
+
+requirements:
+  build:
+    - ninja
+    - {{ compiler("cxx") }}
+    - cmake
+  host:
+    - python
+    - pybind11
+    - eigen
+    - qt
+  run:
+    - python
+    - numpy
+    - qt
+
+test:
+  imports:
+    - xfoil
+
+about:
+  summary: explicit fem for membrane elements

@@ -1,30 +1,30 @@
 package:
-  name: parabem
-  version: 0.1.0
+    name: parabem
+    version: 0.1.0
 
 build:
-  number: 0
+    number: 0
 
 source:
-  git_url: https://github.com/booya-at/paraBEM
+    git_url: https://github.com/booya-at/paraBEM
 
 requirements:
-  build:
-    - vc 14  # [win and py>=35]
-    - ninja
-    - python
-    - cmake
-    - pybind11 2.2.*
-    - eigen
-    - openmpi  # [unix]
-  run:
-    - vc 14  # [win and py>=35]
-    - python
-    - numpy
-    - matplotlib
+    build:
+        - {{ compiler('cxx') }}
+        - ninja
+        - cmake
+    host:
+        - python
+        - pybind11
+        - eigen
+        - openmpi  # [unix]
+    run:
+        - python
+        - numpy
+        - matplotlib
 test:
-  imports:
-    - paraBEM
+    imports:
+        - paraBEM
 
 about:
-  summary: potential flow with boundary elements.
+    summary: potential flow with boundary elements.
