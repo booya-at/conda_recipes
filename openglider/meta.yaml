@@ -10,7 +10,7 @@ source:
   git_tag: develop
 
 build:
-  number: 15
+  number: 16
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
@@ -31,4 +31,7 @@ test:
     - openglider
 
 about:
+  license: GPL3
+  license_family: GPL
+  license_file: LICENSE
   summary: paraglider design
