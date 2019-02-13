@@ -11,6 +11,7 @@ source:
 requirements:
     build:
         - {{ compiler('cxx') }}
+        - {{ cdt('libxext') }}  # [linux]
         - ninja
         - cmake
     host:
@@ -19,10 +20,10 @@ requirements:
         - eigen
         - openmpi  # [unix]
         - vtk
+        - tbb-devel
     run:
         - python
         - numpy
-        - matplotlib
         - vtk
 
 test:
