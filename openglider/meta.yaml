@@ -1,5 +1,5 @@
-{%set name = "openglider"%}
-{%set version = "0.0.1"%}
+{% set name = "openglider" %}
+{% set version = "0.0.1" %}
 
 package:
   name: {{ name }}
@@ -37,3 +37,7 @@ about:
   license_family: GPL
   license_file: LICENSE
   summary: paraglider design
+
+extra:
+  recipe-maintainers:
+    - looooo

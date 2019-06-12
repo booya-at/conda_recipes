@@ -1,6 +1,9 @@
+{% set name = "py-xflr5" %}
+{% set version = "0.0.1" %}
+
 package:
-  name: py-xflr5
-  version: 0.0.1
+  name: {{ name }}
+  version: {{ version }}
 
 build:
   number: 0
@@ -10,8 +13,8 @@ source:
 
 requirements:
   build:
-    - ninja
     - {{ compiler("cxx") }}
+    - ninja
     - cmake
   host:
     - python
@@ -28,4 +31,8 @@ test:
     - xfoil
 
 about:
-  summary: explicit fem for membrane elements
+  summary: python bindings to xfoil
+
+extra:
+  recipe-maintainers:
+    - looooo
