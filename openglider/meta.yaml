@@ -10,7 +10,7 @@ source:
   git_tag: develop
 
 build:
-  number: 19
+  number: 20
   script: python -m pip install --no-deps --ignore-installed .
   noarch: python
 
@@ -28,6 +28,7 @@ requirements:
     - parabem
     - meshpy
     - pyexcel-ezodf
+    - matplotlib-base
 
 test:
   imports:
