@@ -21,7 +21,6 @@ requirements:
   run:
     - python
     - numpy
-    - ezodf
     - svgwrite
     - ezdxf
     - lxml
